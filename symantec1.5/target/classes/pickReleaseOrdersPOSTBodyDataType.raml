@@ -1,0 +1,30 @@
+#%RAML 1.0 DataType
+
+#description: data type for body of pickReleaseOrders POST
+type: object
+properties: 
+  SOURCE:
+    type: string
+    required: true
+  INVENTORY_ORG_CODE:
+    type: string
+    required: true
+  PRODUCT_GROUP:
+    type: string[]
+    required: true
+  PICKRELEASE_START_DATETIME:
+    type: datetime
+    required: true
+  PICKRELEASE_END_DATETIME:
+    type: datetime
+    required: true
+  DELIVERY_NUMBERS:
+    type: string[]
+    required: false
+  PAGE: 
+    type: integer
+    required: true
+  PAGE_SIZE: 
+    type: integer 
+    required: true
+ 
